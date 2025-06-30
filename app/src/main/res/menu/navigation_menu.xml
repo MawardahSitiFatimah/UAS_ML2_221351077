@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="Tentang Aplikasi"
+        android:icon="@drawable/ic_info" />
+
+    <item
+        android:id="@+id/featuresFragment"
+        android:title="Fitur"
+        android:icon="@drawable/ic_feature" />
+
+    <item
+        android:id="@+id/architectureFragment"
+        android:title="Arsitektur Model"
+        android:icon="@drawable/ic_architecture" />
+
+    <item
+        android:id="@+id/simulationFragment"
+        android:title="Simulasi"
+        android:icon="@drawable/ic_simulate" />
+    <item
+        android:id="@+id/DatasetsFragment"
+        android:title="Dataset"
+        android:icon="@drawable/ic_dataset" />
+</menu>

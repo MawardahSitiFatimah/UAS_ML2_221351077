@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notch_padding_top">32dp</dimen>
+    <dimen name="notch_padding_bottom">24dp</dimen>
+    <dimen name="notch_padding_start">32dp</dimen>
+    <dimen name="notch_padding_end">32dp</dimen>
+    <dimen name="toolbar_height">64dp</dimen>
+    <dimen name="toolbar_elevation">8dp</dimen>
+    <dimen name="navigation_drawer_width">320dp</dimen>
+</resources> 

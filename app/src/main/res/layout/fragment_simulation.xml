@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Judul -->
+        <TextView
+            android:text="Simulasi Nutrisi Burger King"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Form Input dibungkus dalam Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Masukkan Informasi Nutrisi"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#424242"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- Semua Input -->
+                <EditText
+                    android:id="@+id/inputCalories"
+                    android:hint="Calories"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText android:id="@+id/inputFatCalories" android:hint="Fat Calories" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputTotalFat" android:hint="Total Fat (g)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputTransFat" android:hint="Trans Fat (g)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputCholesterol" android:hint="Cholesterol (mg)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputSodium" android:hint="Sodium (mg)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputCarbs" android:hint="Carbs (g)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputFiber" android:hint="Fiber (g)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputSugars" android:hint="Sugars (g)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputProtein" android:hint="Protein (g)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputWeightWatchers" android:hint="Weight Watchers Points" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" />
+                <EditText android:id="@+id/inputServingSize" android:hint="Serving Size (g)" android:inputType="numberDecimal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+
+                <!-- Tombol Prediksi -->
+                <Button
+                    android:id="@+id/predictButton"
+                    android:text="Prediksi Sekarang"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:backgroundTint="#E91E63"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Hasil Prediksi -->
+        <TextView
+            android:id="@+id/resultText"
+            android:text="Hasil prediksi akan ditampilkan di sini."
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

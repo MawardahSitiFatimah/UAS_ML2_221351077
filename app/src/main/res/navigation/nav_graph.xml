@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/aboutFragment">
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.burgerkingpredict.AboutFragment"
+        android:label="Tentang Aplikasi" />
+
+    <fragment
+        android:id="@+id/featuresFragment"
+        android:name="com.example.burgerkingpredict.FeaturesFragment"
+        android:label="Fitur" />
+
+    <fragment
+        android:id="@+id/architectureFragment"
+        android:name="com.example.burgerkingpredict.ArchitectureFragment"
+        android:label="Arsitektur" />
+
+    <fragment
+        android:id="@+id/simulationFragment"
+        android:name="com.example.burgerkingpredict.SimulationFragment"
+        android:label="Simulasi" />
+    <fragment
+        android:id="@+id/DatasetsFragment"
+        android:name="com.example.burgerkingpredict.DatasetsFragment"
+        android:label="Dataset" />
+</navigation>

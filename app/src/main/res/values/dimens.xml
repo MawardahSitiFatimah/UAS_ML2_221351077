@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensi untuk menangani notch dan cutout -->
+    <dimen name="notch_padding_top">24dp</dimen>
+    <dimen name="notch_padding_bottom">16dp</dimen>
+    <dimen name="notch_padding_start">16dp</dimen>
+    <dimen name="notch_padding_end">16dp</dimen>
+    
+    <!-- Dimensi untuk toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    
+    <!-- Dimensi untuk navigation drawer -->
+    <dimen name="navigation_drawer_width">280dp</dimen>
+</resources> 
